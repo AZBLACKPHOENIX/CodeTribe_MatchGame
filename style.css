@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('trending-dark-green-and-black-cables-fxkd7ndrl7q6t56v.webp');
+    font-family: 'Segoe UI', sans-serif;
+    background-size: cover;
+}
+
+.game-container {
+    box-shadow: 0 0 25px rgba(72, 31, 255, 0.8);
+    background-color: rgba(8, 15, 41, 0.788);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: rgb(81, 0, 255);
+    place-items: center;
+
+}
+
+.game_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(4, 80px);
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.439);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 70px;
+    height: 70px;
+    background-color: #11192f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.6s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(10, 211, 198, 0.4);
+}
+
+.card:hover {
+    box-shadow: 0 0 15px rgb(19, 205, 219);
+}
+
+.card.flipped {
+    background-color: rgb(186, 190, 224);
+    transform: rotateY(360deg);
+    box-shadow: 0 0 20px #474747;
+}
+
+#restart {
+    background-color: rgb(0, 166, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+#restart:hover {
+    box-shadow: 0 0 15px rgb(9, 120, 255);
+}
+
+#move_counter,
+#timer_counter {
+    font-size: 18px;
+    margin: 5px;
+    color: rgb(30, 0, 255);
+}
